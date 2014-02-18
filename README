@@ -1,0 +1,11 @@
+Stupycart 是一个商城系统。
+
+Stupycart is ecommerce platform for online merchants. fork from opencart (http://www.opencart.com/)，powered by PhalconPHP Framework (http://phalconphp.com) and Stupy template engine (https://github.com/fallgold/stupy)。
+
+
+Install
+先安装opencart，完成后使用opencart数据库，使用Stupycart代码。
+
+配置
+config/config.php
+

@@ -1,0 +1,43 @@
+<?php
+
+$_host = $_SERVER['SERVER_ADDR'];
+$_p = realpath(__DIR__. '/..');
+define('_ROOT_', $_p);
+
+// HTTP
+define('HTTP_SERVER', 'http://'. $_host. '/stupycart/');
+define('HTTP_CATALOG', 'http://'. $_host. '/stupycart/');
+
+// HTTPS
+define('HTTPS_SERVER', 'http://'. $_host. '/stupycart/');
+define('HTTPS_CATALOG', 'http://'. $_host. '/stupycart/');
+
+// DIR
+define('DIR_IMAGE', $_p. '/public/image/');
+define('DIR_CACHE', $_p. '/tmp/cache/');
+define('DIR_DOWNLOAD', $_p. '/tmp/download/');
+define('DIR_LOGS', $_p. '/tmp/logs/');
+
+// DB
+define('DB_PREFIX', 'oc_');
+
+return array(
+	'database' => array(
+		'adapter'  => 'Mysql',
+		'host'     => '127.0.0.1',
+		'username' => '',
+		'password' => '',
+		'dbname'     => '',
+	),
+	'default_module' => 'frontend',
+	'modules' => array(
+		'frontend' => array(
+			'className' => 'Stupycart\Frontend\Module',
+			'path' => __DIR__ . '/../apps/frontend/Module.php'
+		),
+		'admin' => array(
+			'className' => 'Stupycart\Admin\Module',
+			'path' => __DIR__ . '/../apps/admin/Module.php'
+		),
+	),
+);

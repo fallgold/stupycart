@@ -1,0 +1,95 @@
+@import "colors";
+
+$header-bggradient-from: scale-color(
+										adjust-hue($header-bgcolor, -3deg),
+										$lightness: 53.75% );
+
+
+
+$primary-nav-bggradient-from: scale-color(
+												$primary-nav-bgcolor,
+												$saturation: -33.824%,
+												$lightness: 30.667% );
+
+$primary-nav-border-top-color: scale-color(
+												$primary-nav-bgcolor,
+												$saturation: -44.118%,
+												$lightness: 80% );
+
+$primary-nav-item-hover-bggradient-to: scale-color(
+														$primary-nav-bgcolor,
+														$saturation: -10.294%,
+														$lightness: 13.333% );
+
+
+$primary-nav-link-shadow-color: scale-color(
+												$primary-nav-link-color,
+												$lightness: -73% );
+
+$primary-nav-li-ul-link-color: scale-color(
+												$primary-nav-link-color,
+												$lightness: -6% );
+
+
+
+$secondary-nav-item-bggradient-to: scale-color(
+													$secondary-nav-item-bgcolor,
+													$saturation: -4.255%,
+													$lightness: -17.241% );
+
+$secondary-nav-item-border-color: scale-color(
+													$secondary-nav-item-bgcolor,
+													$saturation: -19.149%,
+													$lightness: -31.034% );
+
+
+$secondary-nav-li-ul-bgcolor: scale-color(
+												$secondary-nav-item-bgcolor,
+												$saturation: -21.278%,
+												$lightness: -17.241% );
+
+$secondary-nav-li-ul-bggradient-from: scale-color(
+														$secondary-nav-item-bgcolor,
+														$saturation: -12.766%,
+														$lightness: -24.138% );
+
+$secondary-nav-li-ul-firstitem-border-color: scale-color(
+														$secondary-nav-item-bgcolor,
+														$saturation: 1.887%,
+														$lightness: -36.207% );
+
+$secondary-nav-li-ul-lastitem-border-color: scale-color(
+													$secondary-nav-item-bgcolor,
+													$saturation: 16.981%,
+													$lightness: 19.048% );
+
+
+$secondary-nav-text-color: lighten($secondary-nav-link-color, 7%);
+
+$secondary-nav-link-shadow: darken($secondary-nav-item-bgcolor, 58% );
+
+$secondary-nav-li-ul-link-shadow: scale-color(
+											$secondary-nav-item-bgcolor,
+											$lightness: -43.103% );
+
+
+$stack-box-shadow-color1: scale-color(
+										$secondary-nav-item-bgcolor,
+										$saturation: -17.021%,
+										$lightness: -18.966% );
+
+$stack-box-shadow-color3: scale-color(
+										$secondary-nav-item-bgcolor,
+										$saturation: -19.149%,
+										$lightness: -22.414% );
+
+
+
+$button-bggradient-from: scale-color(
+										adjust-hue($button-bgcolor, -3deg),
+										$lightness: 53.75% );
+
+$button-border-color: scale-color(
+										$button-bgcolor,
+										$saturation: -66%,
+										$lightness: 35% );
