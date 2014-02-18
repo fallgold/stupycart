@@ -9,3 +9,9 @@ Install
 配置
 config/config.php
 
+Nginx
+if (!-f $request_filename){
+	rewrite ^/stupycart/(.+\.(js|ico|gif|jpg|jpeg|pdf|png|css).*)$ /stupycart/public/$1 break;
+	rewrite ^/stupycart/(.*)$ /stupycart/public/index.php?_url=/$1 break;
+}
+
